@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Google analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STGLQW4BJX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-STGLQW4BJX');
+    </script>
+
+    <!-- Title -->
+    <title>Sam Wang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+  </head>
+
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Sam Wang</h1>
+          <p>
+            I'm a computer science student studying AI and Robotics at the <a href="https://ai.seas.upenn.edu/">University of Pennsylvania</a>. I'm part of the <a href="https://www.seas.upenn.edu/~dineshj/pennpal/index.html">Perception Action Learning Group</a> of the <a href="https://www.grasp.upenn.edu/">Penn GRASP Laboratory</a>, where I'm fortunate to be mentored by <a href="https://jasonma2016.github.io/">Dr. Jason Ma</a>, <a href="https://www.seas.upenn.edu/~dineshj/">Prof. Dinesh Jayaraman</a>, and <a href="https://obastani.github.io/">Prof. Osbert Bastani</a>, and work with <a href="https://willjhliang.github.io/">Will Liang</a> and <a href="https://www.linkedin.com/in/hungju-wang/">Johnny Wang</a>. I am passionate about using AI to solve real world problems. I have coauthored two papers on applying foundation models for robot learning, which were published at <a href="https://eureka-research.github.io/eurekaverse/">CoRL</a> and <a href="https://eureka-research.github.io/dr-eureka/">RSS</a>. Previously, my research on applying <a href="https://partner.projectboard.world/isef/project/robo072-rapid-cardiac-screening-using-deep-learning">deep learning for rapid cardiac screening</a> was awarded a <a href="https://www.germantownacademy.net/news/today-at-ga-post-manager-details/~board/today-at-ga/post/germantown-academy-senior-wins-second-place-grand-award-at-international-science-and-engineering-fair">Second Grand Prize in Robotics and Intelligent Machines at ISEF 2023</a>.
+            
+            <br>
+            <br>
+            <a href="https://github.com/samuelwang23/">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=W7fLMpsAAAAJ&hl=en">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/sam-wang-penn/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://x.com/sam_wang23">Twitter</a>
+            <br>
+            
+            <br>
+          </p>
+          <p>
+            <b>Media Coverage:</b> <br>
+            <i>The Economist</i>: <a href="https://www.economist.com/podcasts/2024/06/12/how-ai-can-make-robots-fit-for-a-human-world">"How AI can make robots fit for a human world"</a> <br>
+            <i>VentureBeat</i>: <a href="https://venturebeat.com/automation/nvidias-dreureka-outperforms-humans-in-training-robotics-systems/">"NVIDIA’s DrEureka outperforms humans in training robotics systems"</a> <br>
+            <i>Fox29 News</i>: <a href="https://www.fox29.com/news/university-of-pennsylvania-school-of-engineering-to-offer-new-artificial-intelligence-ai-degree">"Inside UPenn's new Artificial Intelligence degree program"</a> <br>
+
+
+          </p>
+          
+        </div>
+        <div >
+          <img id="intro-image" src="images/profile.jpg">
+          <p style="text-align: center; margin-left: 2em;"><a href="mailto:swang27@seas.upenn.edu">swang27@seas.upenn.edu</a></p> 
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <!-- <button class="button" data-filter="*">Show All</button> -->
+        <!-- <button class="button is-checked" data-filter=".highlight">Highlights</button> -->
+        <button class="button is-checked" data-filter=".publication">Research</button>
+        <button class="button" data-filter=".talk">Projects</button>
+        <button class="button" data-filter=".courses">Courses</button>
+        <button class="button" data-filter=".service">Service</button>
+        <button class="button" data-filter=".awards">Awards</button>
+
+        
+      </div>
+
+     
+
+
+      <div class="grid">
+        
+        <!-- Publications -->
+        <div class="list-item publication" data-category="publication">
+          <a href="https://eureka-research.github.io/eurekaverse/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="800px">
+              <source src="images/eurekaverse.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://eureka-research.github.io/eurekaverse/">Eurekaverse: Environment Curriculum Generation via Large Language Models</a></h3>
+            <p>
+              William Liang, <b>Sam Wang</b>, Hung-Ju Wang, Osbert Bastani, Dinesh Jayaraman†, Yecheng Jason Ma†<br>
+              <br>
+              <i>Conference on Robot Learning (CoRL), 2024 (Oral)</i><br>
+              <i>Princeton Symposium on Safe Deployment of Foundation Models in Robotics, 2024 (Poster)</i><br>
+                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
+                <a href="https://eureka-research.github.io/eurekaverse/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2411.01775">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/eureka-research/eurekaverse">Code</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://eureka-research.github.io/dr-eureka/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="800px">
+              <source src="images/dreureka.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://eureka-research.github.io/dr-eureka/">DrEureka: Language Model Guided Sim-To-Real Transfer
+            </a></h3>
+            <p>
+              Yecheng Jason Ma*, William Liang*, Hung-Ju Wang, <b>Sam Wang</b>, Yuke Zhu, Linxi "Jim" Fan, Osbert Bastani, Dinesh Jayaraman
+              <br>
+              <br>
+              <i>Robotics: Science and Systems (RSS), 2024 (Oral)</i><br>
+              <!-- <i>ICRA Workshop on Agile Robotics, 2024 (Oral)</i><br>
+              <i>ICRA MyoSymposium Workshop, 2024</i><br>
+              <i>CVPR Embodied AI Workshop, 2024</i><br> -->
+                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
+                <a href="https://eureka-research.github.io/dr-eureka/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2406.01967">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/eureka-research/DrEureka">Code</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://partner.projectboard.world/isef/project/robo072-rapid-cardiac-screening-using-deep-learning" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="800px">
+              <source src="images/echocardiogram.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://partner.projectboard.world/isef/project/robo072-rapid-cardiac-screening-using-deep-learning">Deep Learning for Rapid Cardiac Screening</a></h3>
+            <p>
+              <b>Sam Wang</b><br>
+              <i>Regneron International Science and Engineering Fair, 2023</i><br>
+              <font color="49bf9"><i>★ Second Grand Prize, ISEF Robotics and Intelligent Machines Category ★</i></font> </p> <br>
+              <font color="49bf9"><i>★ Special Awards from ACM, International Council on Systems Engineering, Shanghai Youth Science Education Society ★</i></font> </p> <br>
+              <font color="49bf9"><i>★ 1st Place in Computer Science at Delaware Valley Science Fair ★</i></font> </p> <br>
+              <font color="49bf9"><i>★ Merck Special Award for Excellence in Drug Discovery and Human Health, Janssen Cardiovascular and Metabolic Research Award ★</i></font> </p> <br>
+                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
+                <a href="https://partner.projectboard.world/isef/project/robo072-rapid-cardiac-screening-using-deep-learning">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="documents/echocardiogram_report.pdf">PDF</a>
+                
+                <br>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="list-item talk" data-category="publication">
+          <a href="documents/visual_place_rec_report.pdf" class="thumbnail">
+            <img src="images/visual_place_recognition.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="documents/visual_place_rec_report.pdf">Machine Learning for Place Detection</a></h3>
+            <p>
+              Trained models to predict the location of images from only visual features. Experimented with Vision Transformers, in-context learning with vision language models, and segmentation foundation models. Won 2nd place in 200+ student class-wide competition.
+
+            </p>
+            
+            <a href="documents/visual_place_rec_report.pdf">Report</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="https://huggingface.co/Latitude-Attitude">Models</a>
+          </div>
+        </div>
+
+
+        <div class="list-item talk" data-category="publication">
+          <a href="https://github.com/sethsuk/InstaLite" class="thumbnail">
+            <img src="images/pennstagram.png">
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/sethsuk/InstaLite">Pennstagram Social Media Platform</a></h3>
+            <p>
+              Built full-stack social media application with profiles, posts, infinite feed, comments, and secure login. Implemented real-time chat using Socket.io, LLM-augmented interest search powered by GPT, YouTube-inspired recommendation algorithm with Apache Spark, and image similarity search with ChromaDB. Deployed to AWS with EC2, Livy, RDS, and S3; utilized Kafka for federated post retrieval.
+            </p>
+            <a href="https://github.com/sethsuk/InstaLite">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+            <a href="documents/pennstagram.pdf">Report</a> 
+          </div>
+        </div>
+
+        <div class="list-item talk" data-category="publication">
+          <a href="https://github.com/samuelwang23/SignInSignOut" class="thumbnail">
+            <img src="images/sign_in_sign_out.png">
+            
+          </a>
+          <div class="project-description">
+            <h3><a href="https://github.com/samuelwang23/SignInSignOut">Digital Attendance Kiosk</a></h3>
+            <p>
+              Built kiosk with Raspberry Pi and badge scanner to digitize attendance records for 650+ students and faculty. Developed an object-oriented interface for automated attendance tracking using Python, Tkinter, and gspread.
+            </p>
+            <a href="https://github.com/samuelwang23/SignInSignOut">Code</a> 
+          </div>
+        </div>
+
+        <div class="list-item talk" data-category="publication">
+          <a class="thumbnail">
+            <img src="images/websites.png">
+          </a>
+            
+          
+          <div class="project-description">
+            <h3><a>Website Management for Local Organizations</a></h3>
+            <p>
+              Created and maintained brand new websites for School Newspaper, Boy Scout Troop, and community organizations. Created custom plugins for WordPress and ticket sales using PHP.
+
+
+            </p>
+          </div>
+        </div>
+        <div class="list-item talk" data-category="publication">
+          <a class="thumbnail">
+            <img src="images/pipact.jpg">
+          </a>
+          <div class="project-description">
+            <h3><a href="documents/pipact.pdf">Privacy Preserving Contact Tracing with Bluetooth Signals</a></h3>
+            <p>
+              Tested how Bluetooth Low Energy signals could be used for automated and privacy preserving contact tracing on Raspberry Pis.	Ran experiments testing how distance, obstacles, and orientation affected the received signal strength indicator. Trained models using sklearn to use gyroscope and accelerometer data and bluetooth signal strength for accurate distance predictions.
+
+            </p>
+            <a href="documents/pipact.pdf">Report</a>
+          </div>
+        </div>
+
+
+     
+
+
+
+        <!-- Talks -->
+        <!-- <div class="list-item talk description" data-category="talk">
+          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
+        </div> -->
+
+
+        
+
+
+
+
+        <!-- Services -->
+        <div class="list-item courses" data-category="courses">
+          <p class="date">2025</p> CIS 7000 Vision-Based Robot Learning
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> CIS 3990 Artificial Intelligence
+        </div>
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p>  ESE 2240 Signal Processing
+        </div>
+        <div class="list-item courses" data-category="courses">
+          <p class="date">2024</p> CIS 5800 3D Computer Vision
+        </div>
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> CIS 5190 Applied Machine Learning
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> ESE 4020 Statistics of Data Science
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> CIS 2400 Intro to Computer Systems
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> NETS 2120 Scalable and Cloud Computing
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> CIS 1210 Data Structures and Algorithms
+        </div>
+
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> MATH 2400 Linear Algebra
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> STAT 4300 Probability
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date">2023</p> CS285 Deep Reinforcement Learning (UC Berkeley)
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> COMPM050 Introduction to Reinforcement Learning (UCL, DeepMind)
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> CIS 1600 Discrete Math
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> CIS 1200 Programming Languages
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date"></p> MATH 1410 Multivariable Calculus
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <p class="date">2022</p> CS231n: Deep Learning for Computer Vision (Stanford University)
+        </div>
+
+        <div class="list-item courses" data-category="courses">
+          <i>All courses taken at the University of Pennsylvania unless otherwise noted.</i>
+        </div>
+
+        <div class="list-item service" data-category="misc" style="line-height: 1.5em;">
+          <p>I'm the <b>Vice President of the <a href="https://www.edabpenn.com/">Penn Engineering Deans' Advisory Board</a></b>. I organized the inaugural <a href="https://www.edabpenn.com/ai-conference">Penn AI conference</a>, which brought together several hundred student and faculty attendees. I'm also improving Penn Engineering's orientation programs and updating the undergraduate research guide. </p>
+          <br>
+          <p>I'm also the <b>Technology Chair for <a href="https://www.pennengineeringcouncil.com/">Penn Engineering Council</a></b> and am pursuing a minor in <a href="https://www.seas.upenn.edu/entrepreneurship/">Engineering Entrepreneruship</a>. I have organized seminars and panels on founding startups and manage the club's website.</p>
+          <br>
+          <p>I'm an <b>Eagle Scout</b> from <a href="https://www.troop542.org/">Troop 542</a> in Maple Glen, PA and a two time <b><a href="https://presidentialserviceawards.gov/">President’s Volunteer Service Award Gold</a></b> winner.</p>
+          <br>
+          <p>In my free time, I enjoy reading about history and philosophy, cooking, playing basketball, running, and rooting for the Minnesota Vikings. </p>
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          USACO Gold Division
+        </div>
+        <div class="list-item awards" data-category="courses">
+          Eagle Scout
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          <a href="https://www.greenfamilyfoundation.org/samuel-a-green-scholarship">Samuel A. Green Scholar</a>
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          National Merit Scholar
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          Merck Kerrigan Memorial Scholar
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          Merck Raymond O. Hoffman Memorial Scholarship
+        </div>
+
+
+        <div class="list-item awards" data-category="courses">
+          McNeil Patriot Scholarship
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          President’s Volunteer Service Award Gold (2x)
+        </div>
+
+      
+        <div class="list-item awards" data-category="courses">
+          Academy Wooden Spoon Award: Awarded to the senior who has done the most to nourish other students through kindness and character.
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          Nahill Memorial Medal: Awarded to a member of the senior class who, by vote of the class, has done the most to further class unity.
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          2nd Grand Award in Robotics and Intelligent Machines at <a href = "https://www.societyforscience.org/isef/regeneron-isef-2023/">Regeneron International Science and Engineering Fair 2023</a>
+        </div>
+
+        <div class="list-item awards" data-category="courses">
+          3x 1st Place in Computer Science Category and 12th Grade Medalist at <a href="https://www.dvsf.org/">Delaware Valley Science Fair</a></b>
+        </div>
+
+
+
+
+      </div>
+
+      <div id="footer">Template from <a href="https://andyzeng.github.io/">Andy Zeng</a>.</div>
+
+    </div>
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_highlights() {
+        var x = document.getElementById("main-highlights");
+        var y = document.getElementById("more-highlights");
+        var b = document.getElementById("toggle_highlights_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
+</html>

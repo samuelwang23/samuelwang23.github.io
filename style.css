@@ -39,6 +39,8 @@ q:before, q:after {
   content: '';
   content: none;
 }
+sup { vertical-align: super; font-size: smaller; }
+sub { vertical-align: sub; font-size: smaller; }
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -285,8 +287,18 @@ h3 a:hover {
   color: rgb(20, 110, 190);
 }
 
-.publication {
+.publication,
+.list-item.talk {
   margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.publication > .thumbnail,
+.list-item.talk > .thumbnail,
+.publication > .project-description,
+.list-item.talk > .project-description {
+  float: none;
 }
 
 .publication p {
